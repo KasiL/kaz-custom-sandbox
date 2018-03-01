@@ -8,6 +8,13 @@
 						comments_template();
 					endif;
 				endwhile; endif; 
+				echo '<nav>
+					<ul class="pager">
+						<li> Test' . next_posts_link( 'Previous' ) . '</li>
+						<li>' . previous_posts_link( 'Next' ) . '</li>
+					</ul>
+				</nav>'
+				
 			?>
 		</div> <!-- /.col -->
 	</div> <!-- /.row -->
