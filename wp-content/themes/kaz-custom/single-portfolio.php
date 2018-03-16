@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<h1>The Home Page (page-home-page)</h1>
+<h1>Portfolio page</h1>
 <div class="row">
         <?php 
             $args = array(
-                'type'              => 'post',
+                'type'              => 'portfolio',
                 'posts_per_page'    => 3
             );
             $lastBlog = new WP_Query($args);

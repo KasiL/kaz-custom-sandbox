@@ -1,7 +1,7 @@
 version: "2"
 services:
   my-wpdb:
-    image: mariadb
+    image: mysql:5.7
     ports:
       - "8081:3306"
     environment:
