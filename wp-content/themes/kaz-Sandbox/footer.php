@@ -1,6 +1,12 @@
  </main><!-- /.container -->
 
     <footer class="blog-footer">
+      <div class="footer-section">
+        <?php wp_nav_menu( array(
+            'theme_location' => 'footer-menu'
+          ));
+        ?>
+      </div>
       <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
       <p>
         <a href="#">Back to top</a>

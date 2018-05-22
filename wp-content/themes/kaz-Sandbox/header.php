@@ -15,13 +15,18 @@
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="blog.css" rel="stylesheet">
+    <?php wp_head(); ?>
 </head>
-
-<body>
+<?php if(is_home()){
+    $custom_classes = array('definitely_home', 'tester' );
+} else {
+    $custom_classes = array ('not_home');
+}; ?>
+<body <?php body_class( $custom_classes); ?>>
 
     <div class="container">
         <header class="blog-header py-3">
+            <?php wp_nav_menu( array('theme_location'=>'')); ?>
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
                     <a class="text-muted" href="#">Subscribe</a>
